@@ -1,0 +1,82 @@
+#modax{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 10%;
+    text-align: center;
+}
+.modax-body{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+}
+.modax-row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.modax-header h2{
+    color: blue;
+}
+.modax-copies span{
+    color: gray;
+    font-size: 20px;
+}
+.modax-icon{
+    font-size: 50px;
+    color: red;
+}
+.modax-btn{width: 100px;}
+.modax-row table{width: 100%;}
+
+
+.scroller{max-height: 700px; height: 700px; overflow-y: scroll;}
+  
+.scroller::-webkit-scrollbar {
+    width: 12px; 
+  }
+     .scroller::-webkit-scrollbar-track {
+    background:#e4e2e2;
+    border-radius:5px;
+  
+  }
+  
+  .scroller::-webkit-scrollbar-thumb {
+    background-color:var(--primary);
+    border-radius: 6px;
+  }
+  
+  .scroller::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(155, 115, 4); 
+  }
+  
+  
+  @media (max-width:700px){
+      .scroller{
+          overflow-x: scroll;
+      }
+      
+  
+      .scroller::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px;
+  }
+     .scroller::-webkit-scrollbar-track {
+    background:#e4e2e2;
+    border-radius:5px;
+  
+  }
+  
+  .scroller::-webkit-scrollbar-thumb {
+    background-color:#e770ff; 
+    border-radius: 6px;
+  }
+  
+  .scroller::-webkit-scrollbar-thumb:hover {
+    background-color: red; 
+  }
+}
